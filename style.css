@@ -1,0 +1,237 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4fdfd;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header{
+    background: #208bc9;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#judul h1{
+    background: transparent;
+    color: white;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+/* Navigasi */
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    background: white;
+    color: #20c9c9;
+}
+
+#tombol-gelap{
+    background: white;
+    color: #20c9c9;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#tombol-gelap:hover{
+    background: #007777;
+    color: white;
+}
+
+/* Main */
+main{
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+/* Judul Section */
+section h2,
+aside h2{
+    color: #009999;
+    margin-bottom: 15px;
+}
+
+/* Kotak pencarian */
+#cari{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #20c9c9;
+    border-radius: 8px;
+}
+
+/* Artikel */
+article{
+    background: white;
+    border-radius: 12px;
+    padding: 18px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+article h3{
+    color: #008b8b;
+    margin-bottom: 10px;
+}
+
+article img{
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+}
+
+figcaption{
+    text-align: center;
+    font-size: 14px;
+    color: gray;
+    margin-top: 8px;
+}
+
+/* Tombol aksi */
+.aksi{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.btn-suka,
+.btn-baca{
+    background: #20c9c9;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-suka:hover,
+.btn-baca:hover{
+    background: #008b8b;
+}
+
+/* Teks disembunyikan */
+.sembunyi{
+    display: none;
+}
+
+/* Sidebar */
+aside{
+    background: #dffafa;
+    padding: 18px;
+    border-left: 5px solid #20c9c9;
+    border-radius: 10px;
+    margin: 30px 0;
+}
+
+aside ul{
+    padding-left: 20px;
+}
+
+aside a{
+    text-decoration: none;
+    color: #007777;
+}
+
+aside a:hover{
+    text-decoration: underline;
+}
+
+/* Tentang */
+.wrapper{
+    background: #e9ffff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer{
+    background: #20c9c9;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+/* Mode Gelap */
+body.dark{
+    background: #1f1f1f;
+    color: #f2f2f2;
+}
+
+body.dark article,
+body.dark aside,
+body.dark .wrapper{
+    background: #2b2b2b;
+    color: white;
+}
+
+body.dark header,
+body.dark footer{
+    background: #006d6d;
+}
+
+body.dark nav a:hover{
+    background: #ffffff;
+    color: #006d6d;
+}
+
+/* Responsif */
+@media (max-width: 768px){
+
+    #judul h1{
+        font-size: 24px;
+    }
+
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aksi{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
